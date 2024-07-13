@@ -1,1 +1,4 @@
-console.log('Hola mundo')
+
+function greet(name) {
+    return `Hola, ${name}`
+}
