@@ -1,5 +1,5 @@
-const nombre = "Porfirio";
-const apellido = "Díaz";
+const nombre = 'Porfirio';
+const apellido = 'Díaz';
 let valorDado = 5;
 valorDado = 4;
 

@@ -1,12 +1,12 @@
-const nombre = "Porfirio";
-const apellido = "Díaz";
+const nombre = 'Porfirio';
+const apellido = 'Díaz';
 
 const nombreCompleto = `${nombre} ${apellido}`;
 
 console.log(nombreCompleto);
 
 function getSaludo() {
-  return "Hola mundo";
+  return 'Hola mundo';
 }
 
-console.log(`Este es un texto: ${getSaludo()}`)
+console.log(`Este es un texto: ${getSaludo()}`);
