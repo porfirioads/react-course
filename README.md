@@ -71,7 +71,7 @@ yarn create vite
 Run app:
 
 ```bash
-yarn
+yarn dev
 ```
 
 
