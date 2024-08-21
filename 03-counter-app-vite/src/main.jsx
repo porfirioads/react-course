@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import { HelloWorldApp } from './HelloWorldApp';
 import { FirstApp } from './FirstApp';
-import './styles.css'
+import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FirstApp title="Miguel" number={ 5 * 8}/>
+    <FirstApp title="Miguel" subTitle="Hola mundo" />
+    <FirstApp title="Porfirio" />
   </React.StrictMode>,
 );
