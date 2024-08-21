@@ -6,6 +6,6 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FirstApp />
+    <FirstApp title="Miguel" number={ 5 * 8}/>
   </React.StrictMode>,
 );

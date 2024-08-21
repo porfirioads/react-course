@@ -1,16 +1,15 @@
-const newMessage = { message: 'Hola mundo', title: 'Porfirio' };
+import PropTypes from 'prop-types';
 
-const getResult = (a, b) => {
-  return a + b;
-};
-
-export const FirstApp = () => {
+export const FirstApp = ({ title, number }) => {
   return (
-    // <> Create a fragment without import it.
     <>
-      <h1>{newMessage.message}</h1>
-      <p>{getResult(4, 4)}</p>
-      <pre>{JSON.stringify(newMessage)}</pre>
+      <h1>{title}</h1>
+      <p>Hola mundo {number}</p>
     </>
   );
+};
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
 };
