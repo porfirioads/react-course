@@ -73,6 +73,3 @@ Run app:
 ```bash
 yarn dev
 ```
-
-
-
