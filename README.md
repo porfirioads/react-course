@@ -56,6 +56,8 @@ npm start
 
 ## Vite
 
+### Basic commands
+
 Install dependencies:
 
 ```bash
@@ -72,4 +74,43 @@ Run app:
 
 ```bash
 yarn dev
+```
+
+### Testing configuration
+
+Install jest:
+
+```bash
+yarn add --dev jest
+yarn add --dev @types/jest
+```
+
+Add test script in the `package.json` scripts section:
+
+```json
+{
+    ...
+    "scripts": {
+        ...
+        "test": "jest --watchAll",
+        ...
+    },
+    ...
+},
+```
+
+Add jest to the env in `.eslint.cjs` to avoid linter errors:
+
+```javascript
+module.exports = {
+    ...
+    env: { browser: true, es2020: true, jest: true },
+    ...
+}
+```
+
+Execute test script:
+
+```bash
+yarn test
 ```
