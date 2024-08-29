@@ -109,6 +109,20 @@ module.exports = {
 }
 ```
 
+Install babel for jest:
+
+```bash
+yarn add --dev babel-jest @babel/core @babel/preset-env
+```
+
+Create file `babel.config.cjs`:
+
+```javascript
+module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+```
+
 Execute test script:
 
 ```bash
