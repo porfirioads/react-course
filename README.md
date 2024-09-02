@@ -128,3 +128,25 @@ Execute test script:
 ```bash
 yarn test
 ```
+
+## Using fetch with jest (node < 18)
+
+Install packages:
+
+```bash
+yarn add -D whatwg-fetch
+```
+
+Create file `jest.setup.js`:
+
+```javascript
+import 'whatwg-fetch'
+```
+
+Create file `jest.config.cjs`:
+
+```javascript
+module.exports = {
+    setupFiles: ['./jest.setup.js']
+}
+```
