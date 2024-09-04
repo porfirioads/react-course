@@ -150,3 +150,11 @@ module.exports = {
     setupFiles: ['./jest.setup.js']
 }
 ```
+
+## Testing library
+
+Install react testing library:
+
+```bash
+yarn add --dev @testing-library/react @testing-library/dom
+```
