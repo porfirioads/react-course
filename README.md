@@ -158,3 +158,35 @@ Install react testing library:
 ```bash
 yarn add --dev @testing-library/react @testing-library/dom
 ```
+
+Install `jest-environment-jsdom`:
+
+```bash
+yarn add -D jest-environment-jsdom
+```
+
+Configure `jest-environment-jsdom` in the `jest.config.cjs` file:
+
+```javascript
+module.exports = {
+    testEnvironment: 'jest-environment-jsdom',
+    setupFiles: ['./jest.setup.js']
+}
+```
+
+Install `@babel/preset-react`:
+
+```bash
+yarn add -D @babel/preset-react
+```
+
+Configure `@babel/preset-react` in the `babel.config.cjs` file:
+
+```javascript
+module.exports = {
+  presets: [
+    ['@babel/preset-env', { targets: { esmodules: true } }],
+    ['@babel/preset-react', { runtime: 'automatic' }],
+  ],
+};
+```
