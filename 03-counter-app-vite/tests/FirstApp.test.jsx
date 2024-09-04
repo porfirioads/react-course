@@ -3,6 +3,7 @@ import { FirstApp } from '../src/FirstApp';
 
 describe('Pruebas en <FirstApp />', () => {
   test('Debe hacer match con el snapshot', () => {
-    render(<FirstApp />);
+    const title = 'Hola, soy Goku';
+    render(<FirstApp title={title} />);
   });
 });
