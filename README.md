@@ -1,46 +1,30 @@
 # React course
 
-## NVM
+## React configuration
 
-Install nvm:
+### Vite
 
-```bash
-brew install nvm
-```
-
-Add nvm to your shell profile:
+Create app:
 
 ```bash
-source $(brew --prefix nvm)/nvm.sh
+yarn create vite
 ```
 
-Install specific version of node:
+Install dependencies:
 
 ```bash
-nvm install 20
+yarn install
 ```
 
-Use the installed version:
+Run app:
 
 ```bash
-nvm use 20
+yarn dev
 ```
 
-List available node versions:
+### Create React App
 
-```bash
-nvm ls-remote
-```
-
-## Yarn
-
-Install yarn
-
-```bash
-npm install --global yarn
-```
-
-## Create React App
+*CRA is an old react app manager, it is better use vite.*
 
 Create app:
 
@@ -54,29 +38,7 @@ Run app:
 npm start
 ```
 
-## Vite
-
-### Basic commands
-
-Install dependencies:
-
-```bash
-yarn install
-```
-
-Create app:
-
-```bash
-yarn create vite
-```
-
-Run app:
-
-```bash
-yarn dev
-```
-
-### Testing configuration
+## Testing configuration
 
 Install jest:
 
@@ -129,28 +91,6 @@ Execute test script:
 yarn test
 ```
 
-## Using fetch with jest (node < 18)
-
-Install packages:
-
-```bash
-yarn add -D whatwg-fetch
-```
-
-Create file `jest.setup.js`:
-
-```javascript
-import 'whatwg-fetch'
-```
-
-Create file `jest.config.cjs`:
-
-```javascript
-module.exports = {
-    setupFiles: ['./jest.setup.js']
-}
-```
-
 ## Testing library
 
 Install react testing library:
@@ -189,4 +129,26 @@ module.exports = {
     ['@babel/preset-react', { runtime: 'automatic' }],
   ],
 };
+```
+
+## Using fetch with jest (node < 18)
+
+Install packages:
+
+```bash
+yarn add -D whatwg-fetch
+```
+
+Create file `jest.setup.js`:
+
+```javascript
+import 'whatwg-fetch'
+```
+
+Create file `jest.config.cjs`:
+
+```javascript
+module.exports = {
+    setupFiles: ['./jest.setup.js']
+}
 ```
