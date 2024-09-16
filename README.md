@@ -63,7 +63,7 @@ Add test script in the `package.json` scripts section:
 },
 ```
 
-Add jest to the env in `.eslint.cjs` to avoid linter errors:
+Add jest to the env in `.eslintrc.cjs` to avoid linter errors:
 
 ```javascript
 module.exports = {
