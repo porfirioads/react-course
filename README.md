@@ -45,8 +45,7 @@ npm start
 Install jest:
 
 ```bash
-yarn add --dev jest
-yarn add --dev @types/jest
+yarn add --dev jest @types/jest
 ```
 
 Add test script in the `package.json` scripts section:
