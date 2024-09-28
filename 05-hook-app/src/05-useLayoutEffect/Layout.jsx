@@ -1,7 +1,3 @@
-import { useCounter } from '../hooks/useCounter';
-import { useFetch } from '../hooks/useFetch';
-import { LoadingMessage } from '../03-examples/LoadingMessage';
-import { PokemonCard } from '../03-examples/PokemonCard';
 import { useLayoutEffect, useRef, useState } from 'react';
 
 export const Layout = () => {
