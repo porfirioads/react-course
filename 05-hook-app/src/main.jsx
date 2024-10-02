@@ -11,7 +11,8 @@ import './index.css';
 // import { Layout } from './05-useLayoutEffect/Layout';
 // import { Memorize } from './06-memos/Memorize';
 // import { MemoHook } from './07-memoHook/MemoHook';
-import { CallbackHook } from './07-memoHook/CallbackHook';
+// import { CallbackHook } from './07-memoHook/CallbackHook';
+import { Padre } from './08-tareaMemo/Padre';
 
 createRoot(document.getElementById('root')).render(
   // {/* <StrictMode> */}
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
   // <FocusScreen />
   // <Layout />
   // <MemoHook />,
-  <CallbackHook />,
+  // <CallbackHook />,
+  <Padre />,
   // {/* </StrictMode> */}
 );
