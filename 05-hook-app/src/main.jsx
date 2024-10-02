@@ -12,7 +12,9 @@ import './index.css';
 // import { Memorize } from './06-memos/Memorize';
 // import { MemoHook } from './07-memoHook/MemoHook';
 // import { CallbackHook } from './07-memoHook/CallbackHook';
-import { Padre } from './08-tareaMemo/Padre';
+// import { Padre } from './08-tareaMemo/Padre';
+import './09-useReducer/intro-reducer';
+import { TodoApp } from './09-useReducer/TodoApp';
 
 createRoot(document.getElementById('root')).render(
   // {/* <StrictMode> */}
@@ -26,6 +28,7 @@ createRoot(document.getElementById('root')).render(
   // <Layout />
   // <MemoHook />,
   // <CallbackHook />,
-  <Padre />,
+  // <Padre />,
+  <TodoApp />,
   // {/* </StrictMode> */}
 );
