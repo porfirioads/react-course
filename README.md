@@ -119,7 +119,9 @@ module.exports = {
 Install react testing library:
 
 ```bash
-yarn add --dev @testing-library/react @testing-library/dom
+yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react 
+yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
+yarn add --dev @testing-library/dom
 ```
 
 Install `jest-environment-jsdom`:
