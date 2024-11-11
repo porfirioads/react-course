@@ -55,6 +55,8 @@ module.exports = {
 }
 ```
 
+*Note:* if you have a `eslint.config.js` file, delete it.
+
 ### Testing library (for react)
 
 Configure `jest-environment-jsdom` in the `jest.config.cjs` file:
