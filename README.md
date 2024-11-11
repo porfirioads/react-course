@@ -2,8 +2,6 @@
 
 ## React configuration
 
-### Vite
-
 Create app:
 
 ```bash
@@ -20,22 +18,6 @@ Run app:
 
 ```bash
 yarn dev
-```
-
-### Create React App
-
-*CRA is an old react app manager, it is better use vite.*
-
-Create app:
-
-```bash
-npx create-react-app my-app
-```
-
-Run app:
-
-```bash
-npm start
 ```
 
 ## Testing configuration
@@ -73,11 +55,25 @@ module.exports = {
 }
 ```
 
-Create file `babel.config.cjs`:
+### Testing library (for react)
+
+Configure `jest-environment-jsdom` in the `jest.config.cjs` file:
 
 ```javascript
 module.exports = {
-  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+    testEnvironment: 'jest-environment-jsdom',
+    setupFiles: ['./jest.setup.js']
+}
+```
+
+Configure babel presets in the `babel.config.cjs` file:
+
+```javascript
+module.exports = {
+  presets: [
+    ['@babel/preset-env', { targets: { esmodules: true } }],
+    ['@babel/preset-react', { runtime: 'automatic' }],
+  ],
 };
 ```
 
@@ -87,7 +83,7 @@ Execute test script:
 yarn test
 ```
 
-### Using fetch with jest (node < 18)
+### Extra: Using fetch with jest (node < 18)
 
 Install packages:
 
@@ -109,26 +105,20 @@ module.exports = {
 }
 ```
 
-### Testing library (for react)
+## Other: Create React App (CRA)
 
-Configure `jest-environment-jsdom` in the `jest.config.cjs` file:
+*CRA is an old react app manager, it is better use vite.*
 
-```javascript
-module.exports = {
-    testEnvironment: 'jest-environment-jsdom',
-    setupFiles: ['./jest.setup.js']
-}
+Create app:
+
+```bash
+npx create-react-app my-app
 ```
 
-Configure `@babel/preset-react` in the `babel.config.cjs` file:
+Run app:
 
-```javascript
-module.exports = {
-  presets: [
-    ['@babel/preset-env', { targets: { esmodules: true } }],
-    ['@babel/preset-react', { runtime: 'automatic' }],
-  ],
-};
+```bash
+npm start
 ```
 
 ## Course links
