@@ -40,13 +40,14 @@ npm start
 
 ## Testing configuration
 
-### Jest configuration
-
-Install jest:
+### Install dependencies
 
 ```bash
-yarn add --dev jest @types/jest
+yarn add --dev jest babel-jest @babel/core @babel/preset-env @babel/preset-react 
+yarn add --dev @testing-library/react @testing-library/dom @types/jest jest-environment-jsdom
 ```
+
+### Jest configuration
 
 Add test script in the `package.json` scripts section:
 
@@ -70,12 +71,6 @@ module.exports = {
     env: { browser: true, es2020: true, jest: true },
     ...
 }
-```
-
-Install babel for jest:
-
-```bash
-yarn add --dev babel-jest @babel/core @babel/preset-env
 ```
 
 Create file `babel.config.cjs`:
@@ -116,18 +111,6 @@ module.exports = {
 
 ### Testing library (for react)
 
-Install react testing library:
-
-```bash
-yarn add --dev @testing-library/react @testing-library/dom
-```
-
-Install `jest-environment-jsdom`:
-
-```bash
-yarn add -D jest-environment-jsdom
-```
-
 Configure `jest-environment-jsdom` in the `jest.config.cjs` file:
 
 ```javascript
@@ -135,12 +118,6 @@ module.exports = {
     testEnvironment: 'jest-environment-jsdom',
     setupFiles: ['./jest.setup.js']
 }
-```
-
-Install `@babel/preset-react`:
-
-```bash
-yarn add -D @babel/preset-react
 ```
 
 Configure `@babel/preset-react` in the `babel.config.cjs` file:
