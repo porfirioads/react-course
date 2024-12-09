@@ -1,5 +1,6 @@
 import { getHeroesByPublisher } from '../helpers';
 import { HeroCard } from './HeroCard';
+import PropTypes from 'prop-types';
 
 export const HeroList = ({ publisher }) => {
   const heroes = getHeroesByPublisher(publisher);
@@ -11,4 +12,8 @@ export const HeroList = ({ publisher }) => {
       ))}
     </div>
   );
+};
+
+HeroList.propTypes = {
+  publisher: PropTypes.string.isRequired,
 };
