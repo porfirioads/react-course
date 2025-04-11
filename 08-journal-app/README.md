@@ -28,3 +28,30 @@ This will start the development server and open the app in your default browser.
 ```bash
 yarn add react-router-dom@6
 ```
+
+**Material UI**
+
+```bash
+yarn add @mui/material @emotion/react @emotion/styled
+```
+
+**Roboto font**
+
+```bash
+yarn add @fontsource/roboto
+```
+
+Import the font in `src/main.jsx`:
+
+```jsx
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+```
+
+**Material UI icons**
+
+```bash
+yarn add @mui/icons-material
+````

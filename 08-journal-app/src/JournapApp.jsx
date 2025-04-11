@@ -1,10 +1,13 @@
-import React from 'react'
-import { AppRouter } from './router/AppRouter'
+import React from 'react';
+import { AppRouter } from './router/AppRouter';
+import { AppTheme } from './theme';
 
 export const JournapApp = () => {
   return (
     <>
-      <AppRouter />
+      <AppTheme>
+        <AppRouter />
+      </AppTheme>
     </>
-  )
-}
+  );
+};
