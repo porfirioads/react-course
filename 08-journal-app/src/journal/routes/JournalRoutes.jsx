@@ -1,4 +1,3 @@
-import React from 'react';
 import { JournalPage } from '../pages/JournalPage';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
