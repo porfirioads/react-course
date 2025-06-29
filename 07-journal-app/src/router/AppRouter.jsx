@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { JournalRoutes } from '../journal/routes/JournalRoutes';
 import { AuthRoutes } from '../auth';
+import { JournalRoutes } from '../journal';
 
 export const AppRouter = () => {
   return (
