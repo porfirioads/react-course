@@ -2,8 +2,6 @@ import { Typography } from '@mui/material';
 import MailOutline from '@mui/icons-material/MailOutline';
 import { JournalLayout } from '../layout';
 
-const drawerWidth = 240;
-
 export const JournalPage = () => {
   return (
     <JournalLayout>
