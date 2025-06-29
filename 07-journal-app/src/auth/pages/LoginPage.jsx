@@ -30,7 +30,7 @@ export const LoginPage = () => {
                 type="email"
                 placeholder="example@example.com"
                 fullWidth
-              ></TextField>
+              />
             </Grid>
 
             <Grid item size={{ xs: 12 }}>
@@ -39,19 +39,20 @@ export const LoginPage = () => {
                 type="password"
                 placeholder="Introduce your password"
                 fullWidth
-              ></TextField>
+              />
             </Grid>
 
             <Grid container spacing={2}>
               <Grid item size={{ xs: 12 }}>
                 <Button variant="contained" fullWidth>
-                  Login
+                  <Typography>Login</Typography>
                 </Button>
               </Grid>
+
               <Grid item size={{ xs: 12 }}>
                 <Button variant="contained" fullWidth>
                   <Google />
-                  <Typography sx={{ ml: 1 }}>Google</Typography>
+                  <Typography sx={{ ml: 1 }}>Sign in with Google</Typography>
                 </Button>
               </Grid>
             </Grid>
